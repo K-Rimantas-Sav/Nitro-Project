@@ -5,6 +5,7 @@
 html {
   --main-color: #007bff;
   --main-dark-color: #333;
+  --text-dark-color: #999;
 }
 /*  Global styles */
 html {
@@ -124,4 +125,68 @@ h1 {
 .team-card__descripsion {
   padding-top: 0.8rem;
   padding-left: 0.8rem;
+}
+/* Footer ============ */
+
+.footer {
+  padding-top: 13%;
+  background-color: var(--main-dark-color);
+  color: #fff;
+}
+.footer-title {
+  font-weight: normal;
+}
+.footer p,
+.footer-nav,
+.footer .fa {
+  color: var(--text-dark-color);
+}
+.footer-grid {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+.footer-bottom p {
+  padding: 2rem 0;
+  text-align: center;
+}
+.footer-bottom .fa {
+  color: red;
+}
+.footer__hr {
+  height: 1px;
+  background-color: var(--text-dark-color);
+  max-width: 95%;
+  margin: auto;
+}
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.social-link {
+  padding: 1em;
+  font-size: 16px;
+}
+.footer-form {
+  display: flex;
+  flex-direction: row;
+}
+/* footer form    */
+
+.footer-form input {
+  border-radius: 2rem 0 0 2rem;
+  flex-grow: 1;
+  border-color: transparent;
+  border: 1px solid var(--text-dark-color);
+  background-color: var(--main-dark-color);
+  padding: 0.5em;
+  color: #fff;
+}
+.footer-form button {
+  border-radius: 0 2rem 2rem 0;
+  background-color: #fff;
+  border-color: #fff;
+  border: 0;
+  padding: 0.5em 1.6em;
 }

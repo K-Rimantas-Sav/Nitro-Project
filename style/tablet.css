@@ -1,0 +1,20 @@
+/* Tablet CSS ======== */
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 18px;
+  }
+  img {
+    min-height: 360px;
+  }
+  /* Footer ============ */
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+  }
+  /*  Our Team ======== */
+
+  .team-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

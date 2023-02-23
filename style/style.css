@@ -282,10 +282,53 @@ h1 {
   }
   /* Contact Us start ========*/
   .contact__Us {
-    height: 100vh;
-    margin: 0 100.4px;
+    height: auto;
+
+    /* margin: 0 100.4px; */
+  }
+  .contact__Us h2 {
+    color: var(--main-color);
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 80px;
+    margin: 0;
+    /* padding-right: 100px; */
+  }
+  .contact {
+    max-width: 1140px;
+    display: flex;
+    height: 100%;
+    text-align: center;
+
+    margin-left: 130px;
+  }
+  .contact p {
+    padding: 4px;
+  }
+  .contact .fa {
+    color: var(--main-color);
+  }
+  .adres {
+    flex-basis: 30%;
+    /* padding-left: 25px; */
+  }
+  .phone {
+    flex-basis: 30%;
+    /* padding-left: 90px; */
+  }
+
+  .phone a {
+    color: var(--main-color);
+  }
+  .contactEmail {
+    flex-basis: 30%;
+    /* padding-left: 80px; */
+  }
+  .contactEmail a {
+    color: var(--main-color);
   }
   .ContactForm {
+    max-width: 1140px;
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     background-color: #fff;

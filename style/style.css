@@ -2,6 +2,7 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
 @import "reset.css";
 @import "tablet.css";
+@import "desktop.css";
 /* @import "./desktop.css"; */
 
 /*  Variables */
@@ -43,7 +44,7 @@ section {
 }
 /*  Heder  */
 .main-header {
-  background-color: #fff;
+  background-color: #e5e5de;
   position: fixed;
   top: 0;
   left: 0;
@@ -159,7 +160,10 @@ h1 {
 }
 /* Contact Us start ========*/
 .contact__Us {
-  height: 100vh;
+  background-color: #fff;
+
+  padding-left: 20px;
+  height: auto;
   display: flex;
   gap: 16px;
   flex-direction: column;
@@ -240,153 +244,4 @@ h1 {
   border-color: #fff;
   border: 0;
   padding: 0.5em 1.6em;
-}
-@media screen and (min-width: 1000px) {
-  html {
-    font-size: 20px;
-  }
-  .container {
-    max-width: 1140px;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .main-nav {
-    padding-right: 20px;
-  }
-  .main-nav > ul {
-    /* display: block; */
-    display: flex;
-    gap: 0.2rem;
-  }
-  .mai-nav__link {
-    padding: 1em 0.4em;
-  }
-  .mai-nav__link:hover {
-    background-color: #dddddd;
-  }
-  .unlisted {
-    list-style: none;
-    padding-left: 0;
-    margin: 0;
-  }
-  /* Our Teams */
-  .team-container {
-    grid-template-columns: repeat(4, 1fr);
-    /* max-height: 100vh; */
-  }
-  .team-card {
-    padding-bottom: 10px;
-    /* max-height: 292px;
-    max-width: 240px; */
-  }
-  /* Contact Us start ========*/
-  .contact__Us {
-    height: auto;
-
-    /* margin: 0 100.4px; */
-  }
-  .contact__Us h2 {
-    color: var(--main-color);
-    text-align: center;
-    font-size: 40px;
-    padding-bottom: 80px;
-    margin: 0;
-    /* padding-right: 100px; */
-  }
-  .contact {
-    max-width: 1140px;
-    display: flex;
-    height: 100%;
-    text-align: center;
-
-    margin-left: 130px;
-  }
-  .contact p {
-    padding: 4px;
-  }
-  .contact .fa {
-    color: var(--main-color);
-  }
-  .adres {
-    flex-basis: 30%;
-    /* padding-left: 25px; */
-  }
-  .phone {
-    flex-basis: 30%;
-    /* padding-left: 90px; */
-  }
-
-  .phone a {
-    color: var(--main-color);
-  }
-  .contactEmail {
-    flex-basis: 30%;
-    /* padding-left: 80px; */
-  }
-  .contactEmail a {
-    color: var(--main-color);
-  }
-  .ContactForm {
-    max-width: 1140px;
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    background-color: #fff;
-    padding: 48px;
-  }
-  .ContactForm h2 {
-    color: var(--main-dark-color);
-  }
-  .names {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .input {
-    display: block;
-    padding: 5px 7px;
-    border-color: var(--text-dark-color);
-    font-size: 28px;
-    border-radius: 20px;
-    width: 100%;
-    margin-top: 12px;
-    margin-bottom: 10px;
-  }
-  .inputBloc {
-    flex-basis: 47%;
-  }
-  .inputBloc label {
-    margin-bottom: 8px;
-  }
-  .Puse {
-    margin-right: 0;
-  }
-  .subjectMesge textarea {
-    width: 100%;
-    margin-top: 8px;
-    border-radius: 24px;
-    resize: vertical;
-  }
-  /* .inputPuse {
-    flex-basis: 47%;
-  } */
-  /* Contact Us End ========== */
-  /* Footer */
-  .footer-grid {
-    grid-template-columns: 1fr 0.7fr auto 1fr;
-  }
-
-  /* hide burger show nav */
-  .burger {
-    display: none;
-  }
-  .our-team__social-list {
-    position: absolute;
-    background-color: var(--main-color);
-    color: #fff;
-    height: calc(100% - 3.5px);
-    top: 0;
-    left: -39.5px;
-    list-style: none;
-  }
 }

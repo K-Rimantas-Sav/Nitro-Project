@@ -1,26 +1,56 @@
 @media screen and (min-width: 1000px) {
   .container {
     max-width: 1140px;
+    flex-direction: row;
+    justify-content: space-between;
     height: auto;
     margin-left: auto;
     margin-right: auto;
+    box-sizing: border-box;
   }
-  .main-nav > ul {
-    display: block;
+
+  .burger {
+    display: none;
+  }
+  .main-nav {
+    align-items: center;
+
+    width: 600px;
+    justify-content: space-between;
+  }
+  .unlisted {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    font-size: 20px;
+    box-sizing: border-box;
+  }
+  .main-nav li {
+    box-sizing: border-box;
+    font-size: 20px;
+    width: 100%;
   }
   /* Our Teams */
   .team-container {
     grid-template-columns: repeat(4, 1fr);
     /* max-height: 100vh; */
   }
-  .team-card {
-    padding-bottom: 10px;
-    /* max-height: 292px;
-    max-width: 240px; */
+  .team-img-container:hover .our-team__social-list {
+    left: 0;
+    transition: 0.3s;
   }
-  /* .team-card__image {
-    max-height: 210px;
-  } */
+  .our-team__social-list {
+    flex-direction: column;
+    position: absolute;
+    background-color: var(--main-color);
+    color: #fff;
+    height: calc(100% - 3.5px);
+    top: 0;
+    left: -75.5px;
+    list-style: none;
+    margin-top: 0;
+    padding-left: 0;
+  }
   /* Footer */
   .footer-grid {
     grid-template-columns: repeat(4, 1fr);

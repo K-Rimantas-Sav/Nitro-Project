@@ -6,14 +6,10 @@
   img {
     min-height: 360px;
   }
-  /* Footer ============ */
-
-  .footer-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.2rem;
+  .main-header {
+    border-bottom: 2px;
+    border-color: black;
   }
-  /*  Our Team ======== */
-
   .team-container {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -32,4 +28,79 @@
     margin-top: 0;
     padding-left: 0;
   }
+  /* contact__Us start */
+  .contact__Us {
+    max-height: 800px;
+  }
+  .contact__Us h2 {
+    text-align: center;
+    color: var(--main-color);
+  }
+  .contact {
+    max-width: auto;
+    display: flex;
+    height: 100%;
+    text-align: center;
+    justify-content: space-between;
+    padding-right: 20px;
+  }
+  .ContactForm {
+    padding-right: 20px;
+    margin: 0;
+    height: 300px;
+    margin-bottom: 20px;
+  }
+  .ContactForm_grid {
+    display: grid;
+    gap: 2px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    box-sizing: border-box;
+  }
+  .inputBlocFN {
+    width: 100%;
+
+    box-sizing: border-box;
+    margin: 0;
+  }
+  .inputBlocFN input {
+    width: 100%;
+  }
+  .inputBlocLN input {
+    width: 100%;
+  }
+  .emaiContact {
+    grid-column: span 4;
+    box-sizing: border-box;
+    margin: 0;
+    /* padding-right: 20px; */
+  }
+  .emaiContact input {
+    width: 100%;
+  }
+  .emaiContact {
+    grid-template-rows: (1, 3);
+  }
+  .subjectContact {
+    grid-column: span 4;
+    box-sizing: border-box;
+    margin: 0;
+  }
+  .subjectContact input {
+    width: 100%;
+  }
+  .subjectMesge {
+    grid-column: span 4;
+  }
+  .subjectMesge textarea {
+    width: 100%;
+  }
+  /* contact__Us end */
+  /* Footer ============ */
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+  }
+  /*  Our Team ======== */
 }

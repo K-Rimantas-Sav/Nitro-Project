@@ -18,15 +18,17 @@
     <header class="main-header">
       <div class="container">
         <a href="indeex.html" class="logo">Nitro<span>.</span></a>
-        <nav class="main-nav">
-          <ul class="unlisted">
-            <li><a href="#" class="mai-nav__link">Home</a></li>
-            <li><a href="#" class="mai-nav__link">About</a></li>
-            <li><a href="#" class="mai-nav__link">Testimoial</a></li>
-            <li><a href="#" class="mai-nav__link">Contact Us</a></li>
-          </ul>
-          <i class="burger fa fa-bars" aria-hidden="true"></i>
-        </nav>
+        <div class="main-nav">
+          <nav >
+            <ul class="unlisted">
+              <li><a href="#" class="mai-nav__link">Home</a></li>
+              <li><a href="#" class="mai-nav__link">About</a></li>
+              <li><a href="#" class="mai-nav__link">Testimoial</a></li>
+              <li><a href="#" class="mai-nav__link">Contact Us</a></li>
+            </ul>
+            <i class="burger fa fa-bars" aria-hidden="true"></i>
+          </nav>
+        </div>
       </div>
     </header>
     <section class="hero overlay">
@@ -305,28 +307,30 @@
       
       <div class="ContactForm">
         <h2>Contact Form</h2>
-        <div class="names">
-          <div class="inputBloc">
-            <label for="First_Name">First Name</label>
-            <input type="text" class="input Puse" id="First_Name">
+        <div class="ContactForm_grid">
+            <!--<div class="names">-->
+              <div class="inputBlocFN">
+                <label for="First_Name">First Name</label>
+                <input class="input Puse" type="text"  id="First_Name">
+              </div>
+              <div class="inputBlocLN">
+                <label for="Last_Name">Last Name</label>
+                <input type="text" class="input Puse" id="Last_Name">
+              <!--</div>-->
           </div>
-          <div class="inputBloc">
-            <label for="Last_Name">Last Name</label>
-            <input type="text" class="input Puse" id="Last_Name">
+          <div class="emaiContact">
+            <label for="email">Email</label>
+            <input type="email" class="input Full" id="email">
           </div>
-      </div>
-      <div class="emaiContact">
-        <label for="email">Email</label>
-        <input type="email" class="input Full" id="email">
-      </div>
-      <div class="subjectContact">
-        <label for="subject">Subject</label>
-        <input type="email" class="input Full" id="subject">
-      </div>
-      <div class="subjectMesge">
-        <label for="mesege">Message</label>
-        <textarea name="Message" id="mesege" rows="4"></textarea>
-      </div>
+          <div class="subjectContact">
+            <label for="subject">Subject</label>
+            <input type="email" class="input Full" id="subject">
+          </div>
+          <div class="subjectMesge">
+            <label for="mesege">Message</label>
+            <textarea name="Message" id="mesege" rows="2"></textarea>
+          </div>
+        </div>
       </div>
       <!--Contakt Form End-->
     </section>

@@ -2,8 +2,7 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
 @import "reset.css";
 @import "tablet.css";
-@import "desktop.css";
-/* @import "./desktop.css"; */
+/* @import "desktop.css"; */
 
 /*  Variables */
 html {
@@ -66,9 +65,6 @@ section {
 }
 .burger {
   font-size: 22px;
-}
-.main-nav > ul {
-  display: none;
 }
 
 /*  Hero sect  */
@@ -244,4 +240,85 @@ h1 {
   border-color: #fff;
   border: 0;
   padding: 0.5em 1.6em;
+}
+@media screen and (min-width: 1000px) {
+  /* heeder */
+  .main-nav ul {
+    display: flex;
+    gap: 0.5rem;
+    font-size: 20px;
+    padding-right: 60px;
+  }
+  .mai-nav__link {
+    padding-right: 20px;
+  }
+  .nav_list_Ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .nav_list .burger {
+    display: none;
+  }
+  /* Our Teams */
+  .team-container {
+    grid-template-columns: repeat(4, 1fr);
+    /* max-height: 100vh; */
+  }
+  .team-img-container img {
+    height: 486.4px;
+  }
+  .team-img-container:hover .our-team__social-list {
+    left: 0;
+    transition: 0.3s;
+  }
+  .our-team__social-list {
+    position: absolute;
+    background-color: var(--main-color);
+    color: #fff;
+    height: calc(100% - 3.5px);
+    top: 0;
+    left: -45.5px;
+    list-style: none;
+    margin-top: 0;
+    padding-left: 0;
+  }
+  .our-team__social-link {
+    font-size: 20px;
+    height: 45px;
+    width: 45px;
+    color: #fff;
+    padding: 0;
+    display: inline-block;
+  }
+  .fa {
+    display: block;
+    height: 25px;
+    width: 25px;
+    padding-left: 12px;
+    padding-top: 5px;
+    margin: 0;
+  }
+  .contact {
+    width: 1200px;
+    margin-left: 400px;
+  }
+  /* .adres {
+    margin-left: 200px;
+  }
+  .contactEmail {
+    margin-right: 200px;
+  } */
+  /* Contakt Form start */
+  .ContactForm_grid {
+    width: 1200px;
+    text-align: center;
+    margin-left: 400px;
+    font-size: 20px;
+  }
+  /* Footer */
+  .footer-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
+  }
 }

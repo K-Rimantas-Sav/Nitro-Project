@@ -1,5 +1,8 @@
 @media screen and (min-width: 1000px) {
-  .container {
+  html {
+    font-size: 2rem;
+  }
+  /* .container {
     max-width: 1140px;
     flex-direction: row;
     justify-content: space-between;
@@ -7,28 +10,20 @@
     margin-left: auto;
     margin-right: auto;
     box-sizing: border-box;
-  }
+  } */
 
-  .burger {
-    display: none;
-  }
   .main-nav {
-    align-items: center;
-
-    width: 600px;
+    height: 30px;
+    width: 100%;
+    display: flex;
     justify-content: space-between;
   }
-  .unlisted {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    font-size: 20px;
-    box-sizing: border-box;
-  }
   .main-nav li {
-    box-sizing: border-box;
-    font-size: 20px;
-    width: 100%;
+    height: auto;
+    width: auto;
+  }
+  .burger {
+    display: none;
   }
   /* Our Teams */
   .team-container {

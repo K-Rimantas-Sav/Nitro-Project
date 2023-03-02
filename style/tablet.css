@@ -10,8 +10,14 @@
     border-bottom: 2px;
     border-color: black;
   }
+  .main-nav ul {
+    display: none;
+  }
   .team-container {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .unlisted {
+    display: block;
   }
   .team-img-container:hover .our-team__social-list {
     left: 0;
@@ -28,6 +34,7 @@
     margin-top: 0;
     padding-left: 0;
   }
+
   /* contact__Us start */
   .contact__Us {
     max-height: 800px;

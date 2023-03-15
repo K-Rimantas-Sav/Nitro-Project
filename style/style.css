@@ -313,7 +313,7 @@ h1 {
   .ContactForm_grid {
     width: 1200px;
     text-align: center;
-    margin-left: 400px;
+    margin: auto;
     font-size: 20px;
   }
   /* Footer */

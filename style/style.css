@@ -302,7 +302,7 @@ h1 {
   }
   .contact {
     width: 1200px;
-    margin-left: 400px;
+    margin: auto;
   }
   /* .adres {
     margin-left: 200px;

@@ -200,6 +200,7 @@ h1 {
 }
 .footer-bottom .fa {
   color: red;
+  margin: 0;
 }
 .footer__hr {
   height: 1px;
@@ -294,7 +295,7 @@ h1 {
   .fa {
     display: block;
     height: 25px;
-    width: 25px;
+    /* width: 25px; */
     padding-left: 12px;
     padding-top: 5px;
     margin: 0;
